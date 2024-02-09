@@ -1,0 +1,735 @@
+body {
+    background-color: black;
+}
+
+#sus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+}
+
+li {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.parf {
+    color: white;
+    margin-left: 50px;
+}
+
+.fundal {
+    display: flex;
+    position: absolute;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titlu {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.intro {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    -webkit-text-stroke: 2px black;
+}
+
+.parfum {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.scroll {
+    width: 50px;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scroll img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.more {
+    background-color: black;
+    border: 2px solid rgb(210, 203, 15);
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -450px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+.more:hover {
+    background-color: rgb(210, 203, 15);
+}
+
+.braila {
+    margin-top: 8px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 50px;
+    text-decoration: underline;
+    font-size: large;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.text {
+    color: white;
+    padding-top: 100px;
+    font-size: 1.75rem;
+    text-align: center;
+    line-height: 1.8;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 120px;
+}
+
+#myImage {
+    position: relative;
+    top: 0;
+    animation-name: moveUpDown;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveUpDown {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -30px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGINA 2 */
+
+
+
+#produs-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    background-image: url('img/fundal2.png');
+    background-position: 0px 0px;
+    animation: scrolling 28s linear infinite;
+}
+
+.produs {
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    text-align: center;
+    width: 90%;
+    margin: 10px;
+    transition: filter 0.5s ease-in-out;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+}
+
+.produs img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.produs h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.produs p {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.produs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produs:hover {
+    filter: brightness(128%);
+    cursor: pointer;
+    transform: rotate(1deg);
+}
+
+.produs.blur {
+    filter: blur(5px);
+}
+
+.produs img.nou {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+    border-radius: 15px;
+}
+
+.produs:hover img.original {
+    opacity: 1;
+}
+
+.produs:hover img.nou {
+    opacity: 1;
+}
+
+
+@keyframes scrolling {
+    from {
+        background-position: 0px 0px;
+    }
+
+    to {
+        background-position: 100% 0px;
+    }
+}
+
+.pret {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGINA 3 */
+
+
+
+.header {
+    height: 500px;
+    background-image: url('img/fundal3.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.header h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #bf0000;
+    cursor: pointer;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 190px;
+    color: white;
+}
+
+.feature {
+    height: 450px;
+    flex-basis: 30%;
+    margin: 1rem;
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGINA 4 */
+
+
+
+.lucru {
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERRY  TABLET*/
+
+
+
+#popup {
+    display: none;
+}
+
+.morelol {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #sus li {
+        display: none;
+    }
+
+    .morelol {
+        display: flex;
+    }
+
+    .parf h1 a {
+        font-size: 50px;
+    }
+
+    .fundal {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .intro {
+        display: none;
+    }
+
+    .parfum {
+        font-size: 100px;
+        width: 250px;
+        bottom: -450px
+    }
+
+    .scroll {
+        width: 110px;
+        position: absolute;
+        height: 0px;
+    }
+
+    .text {
+        font-size: 40px;
+    }
+
+    .more {
+        display: none;
+    }
+
+    #produs-container {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+    }
+
+    .produs {
+        border: 1px solid white;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 5px;
+        text-align: center;
+        width: 90%;
+        margin: 30px;
+        transition: filter 0.5s ease-in-out;
+        background-color: white;
+        position: relative;
+        display: inline-block;
+    }
+
+    .produs img {
+        max-width: 50%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .produs h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .produs p {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    .produs-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: 190px;
+        color: white;
+    }
+
+    .feature {
+        height: 450px;
+        flex-basis: 30%;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    .popup-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .popup-content h2 {
+        color: #fff;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERRY  MOBILE*/
+
+
+
+@media only screen and (max-width: 360px) {
+
+    .parf h1 a {
+        font-size: 35px;
+    }
+
+    .parfum {
+        font-size: 100px;
+        width: 150px;
+        bottom: -250px
+    }
+
+    .more {
+        display: flex;
+    }
+
+    .more {
+        background-color: black;
+        border: 2px solid rgb(210, 203, 15);
+        border-radius: 20px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 20px;
+    }
+
+    #produs-container {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 0px;
+    }
+
+    .produs {
+        border: 1px solid white;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 5px;
+        text-align: center;
+        width: 90%;
+        margin: 10px;
+        transition: filter 0.5s ease-in-out;
+        background-color: white;
+        position: relative;
+        display: inline-block;
+    }
+
+    .produs-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: 190px;
+        color: white;
+    }
+
+    .feature {
+        height: 450px;
+        flex-basis: 30%;
+        margin: 1rem;
+        text-align: center;
+    }
+
+
+    .header {
+        height: 500px;
+        background-image: url('img/fundal3.png');
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .header h2 {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .text {
+        display: none;
+    }
+
+    .scroll {
+        display: none;
+    }
+
+    .aur {
+        display: none;
+    }
+
+    .intro {
+        font-size: 40px;
+    }
+
+    .parfum {
+        font-size: 60px;
+    }
+}
